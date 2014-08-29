@@ -1,0 +1,42 @@
+.site-content .quotes {
+	position: absolute;
+	top: 0;
+	z-index: 9999;
+	height: 25px;
+	background: $white;
+	padding: 2px 0;
+	width: 100%;
+}
+
+.site-content .quotes p {
+	font-family: $font-stack-text;
+	font-size: $font-size-small;
+}
+
+.site-content #cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	/*border: 25px solid white;*/
+	border-top: 25px solid $white;
+	border-left: 25px solid $white;
+	border-right: 25px solid $white;
+	background: #dad7ce 50% 80% no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+
+/* 404 */
+.site-content .not-found .not-found-title {
+	font-family: $font-display;
+	font-size: $font-size-big;
+	color: $main-color;
+}
+
+.site-content .not-found .not-found-content {
+	font-family: $font-display;
+	font-size: $font-size-small;
+	color: $main-color;
+}

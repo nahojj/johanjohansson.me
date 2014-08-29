@@ -1,0 +1,25 @@
+.site-content .contact-content .contact-heading {
+	font-family: $font-display;
+	font-size: $font-size-big;
+}
+
+.site-content .contact-content .contact-social-media .facebook a,
+.site-content .contact-content .contact-social-media .linkedin a,
+.site-content .contact-content .contact-social-media .twitter a,
+.site-content .contact-content .contact-social-media .mail a {
+	color: $main-color;
+	font-size: $social-media-icons-size;
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out;
+	-o-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+
+.site-content .contact-content .contact-social-media .facebook a:hover,
+.site-content .contact-content .contact-social-media .linkedin a:hover,
+.site-content .contact-content .contact-social-media .twitter a:hover,
+.site-content .contact-content .contact-social-media .mail a:hover {
+	color: $main-color-hover;
+	text-decoration: none;
+}

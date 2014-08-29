@@ -1,0 +1,35 @@
+/*
+Theme Name: johanjohansson
+Theme URI: http://johanjohansson.me/
+Author: Johan Johansson
+Author URI: http://johanjohansson.me/
+Description: Description
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: johanjohansson
+Domain Path: /languages/
+Tags:
+
+
+
+/*--------------------------------------------------------------
+1.0 - SASS
+--------------------------------------------------------------*/
+@import "fonts";
+@import "variables";
+@import "mixin";
+@import "header";
+@import "content";
+@import "about";
+@import "blog";
+@import "contact";
+@import "responsive";
+@import "footer";
+
+
+
+
+
+
+

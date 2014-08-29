@@ -1,0 +1,29 @@
+.main-footer {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: $white;
+	text-align: center;
+	z-index: 100;
+}
+
+.site-footer {
+	width: 100%;
+	height: 30px;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	background-color: $white;
+	text-align: center;
+	z-index: 100;
+	margin-top: 40px;
+}
+
+.main-footer p,
+.site-footer p {
+	padding: 3px 0;
+	font-family: $font-stack-text;
+	font-size: $font-size-small;
+}

@@ -1,0 +1,52 @@
+@media (min-width : 768px) and (max-width : 1024px) {
+	.site-content .qoute,
+	.site-content .not-found .not-found-title,
+	.site-content #blog #blogpost .blogpost-title a,
+	.site-content #blog #blogpost .blogpost-header .blogpost-title {
+		font-size: $font-md;
+	}
+}
+
+@media(max-width:767px) {
+	.site-content .responsive_qoute {
+
+		h1 {
+			font-weight: 300;
+		}
+	}
+
+	.site-content .qoute,
+	.site-content .not-found .not-found-title,
+	.site-content #blog #blogpost .blogpost-title a,
+	.site-content #blog #blogpost .blogpost-header .blogpost-title {
+		font-size: $font-sm;
+	}
+
+	.site-content #blog .done,
+	.site-content #blog .more  {
+		width: 30%;
+	}
+
+}
+
+@media (min-width : 320px) and (max-width : 480px) {
+	.site-content #cover {
+		display: none;
+	}
+
+	.site-content .qoute,
+	.site-content .not-found .not-found-title,
+	.site-content #blog #blogpost .blogpost-title a,
+	.site-content #blog #blogpost .blogpost-header .blogpost-title {
+		font-size: $font-xs;
+	}
+
+	.site-content #blog .done,
+	.site-content #blog .more {
+		width: 65%;
+	}
+
+	.change-footer {
+		position: relative;
+	}
+}

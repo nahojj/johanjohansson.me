@@ -1,0 +1,69 @@
+.site-content #about {
+	position: relative;
+	min-height: 300px;
+}
+
+.site-content #about span {
+	font-family: Helvetica, Arial;
+	font-size: 16px;
+	display: block;
+	margin: 40px 0;
+	letter-spacing: 5px;
+	color: #777;
+}
+
+.site-content #about .hide-arrow {
+	opacity: 0;
+}
+
+.site-content #about .outcover {
+	height: 25px;
+	position: absolute;
+	width: 100%;
+	top: 55%;
+	border-bottom: 2px solid black;
+}
+
+.site-content #about .portfolio-img {
+	margin: 10px 0 20px 0;
+}
+
+.site-content .portfolio-img img {
+	border: 3px solid black;
+}
+
+.site-content #portfolio {
+	margin-top: 40px;
+}
+
+.site-content #portfolio .portfolio-content h1 {
+	font-size: $font-size-big;
+	font-family: $font-display;
+	margin-bottom: 10px;
+}
+
+.site-content #portfolio .portfolio-content p {
+	margin-top: 40px;
+	font-size: $font-size-small;
+	font-family: $font-stack-text;
+	word-spacing: $wordspace;
+}
+
+.site-content #portfolio .portfolio-content img {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.site-content #portfolio .portfolio-content .spot-one {
+	margin-bottom: 50px;
+}
+
+.site-content #portfolio .portfolio-content .spot-one a {
+	text-decoration: underline;
+	color: $main-color;
+}
+
+.site-content #portfolio .portfolio-content .spot-one a:hover {
+	text-decoration: underline;
+	color: $main-color-hover;
+}

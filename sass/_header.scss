@@ -1,0 +1,110 @@
+.site-header {
+	background-color: $white;
+	position: relative;
+	z-index: 100;
+}
+
+.push-header {
+	margin-top: 10%;
+}
+
+.site-header #logo  {
+	margin-top: 30px;
+	border-bottom: 1px solid $black;
+}
+
+.site-header #logo a {
+	color: $main-color;
+	font-family: $font-display;
+	font-size: $font-size-big;
+	text-decoration: none;
+}
+
+.site-header #logo a:hover {
+	font-size: 0;
+}
+
+.site-header #logo a:hover:before {
+	font-size: $font-size-big;
+	content: attr(data-hover);
+}
+
+
+.site-header #logo:after {
+	content: '•••';
+	display: block;
+	margin: 0;
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.site-header .main-navigation .navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(248, 248, 248, 0);
+}
+
+.site-header .main-navigation .menu-primary-container {
+	text-align: center;
+}
+
+.site-header .main-navigation .navbar-nav {
+	float: none;
+	display: inline-block;
+	zoom: 1; /* hasLayout IE7 trigger */
+}
+
+
+.site-header .main-navigation .navbar-default .navbar-nav > li > a {
+	color: $main-color;
+	text-transform: uppercase;
+	font-family: $font-stack-text;
+	font-size: $font-size-small;
+}
+
+.site-header .main-navigation .navbar-default .navbar-toggle {
+	border-color: $white;
+	position: relative;
+	float: right;
+	padding: 10px 10px;
+	margin-top: 8px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.site-header .main-navigation .navbar-default .navbar-toggle:hover,
+.site-header .main-navigation .navbar-default .navbar-toggle:focus {
+	background-color: none;
+}
+
+.site-header .main-navigation .navbar-default .navbar-toggle .icon-bar {
+	display: block;
+	width: 36px;
+	height: 1px;
+	margin-bottom: 10px;
+	background-color: $black;
+	-webkit-transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	transition: all .1s linear;
+}
+
+.site-header .main-navigation .navbar-default .navbar-toggle.active .icon-bar:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-top: 8px;
+}
+
+.site-header .main-navigation .navbar-default .navbar-toggle.active .icon-bar:nth-child(3) {
+	opacity: 0;
+}
+
+.site-header .main-navigation .navbar-default .navbar-toggle.active .icon-bar:nth-child(4) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	margin-top: -22px;
+}

@@ -1,0 +1,165 @@
+.site-content #blog #blogpost {
+	margin: 45px 0 0px 0;
+}
+
+.site-content #blog #blogpost:after {
+	content: '•';
+	display: block;
+	font-size: 25px;
+	margin: 30px 0 0 0;
+	text-align: center;
+}
+
+.site-content #blog #blogpost .blogpost-title {
+	margin: 0 0 30px 0;
+}
+
+.site-content #blog #blogpost .blogpost-title a,
+.site-content #blog #blogpost .blogpost-header .blogpost-title {
+	color: $main-color;
+	font-family: $font-display;
+	font-size: $heading-size;
+	font-style: $font-style;
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out;
+	-o-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+
+.site-content #blog #blogpost .blogpost-image {
+	margin-bottom: 40px;
+}
+
+.site-content #blog .push-thumb {
+	margin-bottom: 35px;
+}
+
+.site-content #blog  #blogpost .blogpost-title a:hover {
+	color: $main-color-hover;
+	text-decoration: none;
+}
+
+.site-content #blog #blogpost .blogpost-content {
+	margin-bottom: 45px;
+}
+
+.site-content #blog #blogpost .blogpost-content:after {
+	content: '•••';
+	display: block;
+	margin: 0;
+	font-size: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.site-content #blog #blogpost .blogpost-excerpt p,
+.site-content #blog #blogpost .blogpost-excerpt p span,
+.site-content #blog #blogspot .blogpost-excerpt span {
+	margin: 0px 0 40px 0;
+	color: $main-color !important;
+	font-family: $font-stack-text;
+	font-weight: 700;
+	font-size: $content-size;
+	word-spacing: $wordspace;
+}
+
+.site-content #blog #blogpost .blogpost-content p,
+.site-content #blog #blogpost .blogpost-content p span,
+.site-content #blog #blogspot .blogpost-content span,
+.site-content #blog #blogpost .blogpost-header .blogpost-meta {
+	margin: 0px 0 20px 0;
+	color: $main-color !important;
+	font-family: $font-stack-text;
+	font-size: $font-size-small;
+	word-spacing: $wordspace;
+}
+
+.site-content #blog #blogpost #blogpost-latest {
+	padding: 20px 0;
+	border-top: 1px solid $black;
+}
+
+.site-content #blog #blogpost #blogpost-latest .last-post h4 {
+	font-size: $heading-size-four;
+	font-family: $font-display;
+}
+
+.site-content #blog #blogpost #blogpost-latest .last-post p {
+	font-size: $font-size-small;
+}
+
+
+.site-content #blog #blogpost .blogpost-button {
+	color: $main-color;
+	font-size: $font-size-small;
+	font-family: $font-stack-text;
+	font-weight: $bold-seven;;
+	text-transform: uppercase;
+	text-shadow: none;
+	padding: 7px 18px;
+	border: 1px solid $border-color-button;
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out;
+	-o-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+
+.site-content #blog #blogpost .blogpost-button:hover {
+	color: $main-color-hover;
+	text-decoration: none;
+}
+
+/* Load More Post */
+.site-content #blog .more {
+	width: 20%;
+	padding: 0px;
+	font-family: $font-stack-text;
+	font-size: $font-size-small;
+	font-weight: $bold-seven;
+	text-transform: uppercase;
+	background-color: $white;
+	color: $main-color;
+	border: 1px solid $border-color-button;
+}
+
+/* When Load More post're done */
+.site-content #blog .done {
+	width: 20%;
+	padding: 0px;
+	font-family: $font-stack-text;
+	font-size: $font-size-small;
+	background-color: $white;
+	color: $main-color;
+	border: 3px solid $black;
+	opacity: 0.2;
+}
+
+.site-content .blogpost-content .tags {
+	border-top: 1px solid $main-color-hover;
+}
+
+.site-content .tags .tag {
+	margin: 10px 0 0 0;
+}
+
+.site-content .blogpost-content .tags .tag a {
+	margin-right: 5px;
+	color: $main-color;
+	font-size: $font-size-small;
+	font-family: $font-stack-text;
+	text-shadow: none;
+	padding: 2px 10px;
+	border: 1px solid $border-color-button;
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out;
+	-o-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+
+.site-content .blogpost-content .tags .tag a:hover {
+	color: $main-color-hover;
+	text-decoration: none;
+}
