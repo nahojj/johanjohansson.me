@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
 * Template Name: Kontakt
 * @package johanjohansson
@@ -6,10 +6,7 @@
 ?>
 <?php get_header('second'); ?>
 <div class="quotes col-sm-12 text-center">
-	<p class="quote" style="display: none">Snuff & Coffee is Swedish love</p>
-	<p class="quote" style="display: none">Love = Oxygen</p>
-	<p class="quote" style="display: none">Beauty = price</p>
-	<p class="quote" style="display: none">Keep a business diary</p>
+	<p class="quote"></p>
 </div><!-- quotes end -->
 
 <section id="contact">
@@ -38,4 +35,4 @@
 		</div><!-- contact-content end -->
 	</div><!-- container end -->
 </section>
-<?php get_footer('sfooter'); ?>
+<?php get_footer(); ?>

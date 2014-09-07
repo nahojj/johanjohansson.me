@@ -38,7 +38,10 @@
 	line-height: 25px;
 }
 
-.site-header .main-navigation .navbar-default {
+.site-header .main-navigation .navbar-default,
+.site-header .main-navigation .navbar-default .navbar-collapse,
+.site-header .main-navigation .navbar-default .navbar-form  {
+	border: none;
 	background-color: rgba(248, 248, 248, 0);
 	border-color: rgba(248, 248, 248, 0);
 }

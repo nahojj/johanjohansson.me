@@ -67,7 +67,8 @@
 .site-content #blog #blogpost .blogpost-content p,
 .site-content #blog #blogpost .blogpost-content p span,
 .site-content #blog #blogspot .blogpost-content span,
-.site-content #blog #blogpost .blogpost-header .blogpost-meta {
+.site-content #blog #blogpost .blogpost-header .blogpost-meta,
+.site-content #blog .blogpost-article .blogpost-content {
 	margin: 0px 0 20px 0;
 	color: $main-color !important;
 	font-family: $font-stack-text;
@@ -136,6 +137,8 @@
 	opacity: 0.2;
 }
 
+// Tags
+
 .site-content .blogpost-content .tags {
 	border-top: 1px solid $main-color-hover;
 }
@@ -147,11 +150,10 @@
 .site-content .blogpost-content .tags .tag a {
 	margin-right: 5px;
 	color: $main-color;
-	font-size: $font-size-small;
+	font-size: $font-tags;
 	font-family: $font-stack-text;
 	text-shadow: none;
-	padding: 2px 10px;
-	border: 1px solid $border-color-button;
+	padding: 2px 5px;
 	-webkit-transition: color 0.25s ease-in-out;
 	-moz-transition: color 0.25s ease-in-out;
 	-ms-transition: color 0.25s ease-in-out;
@@ -163,3 +165,24 @@
 	color: $main-color-hover;
 	text-decoration: none;
 }
+
+// Tag --> Tags
+
+.site-content #blog .blogpost-article .blogpost-header .blogpost-title,
+.site-content #blog .blogpost-article .blogpost-header .blogpost-title a {
+	color: $black;
+	font-family: $font-display;
+}
+
+.site-content #blog .blogpost-article .blogpost-meta {
+	color: $main-color;
+	font-size: $font-tags;
+	font-family: $font-stack-text;
+}
+
+
+
+
+
+
+

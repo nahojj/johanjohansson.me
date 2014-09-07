@@ -10,7 +10,6 @@
 			<?php the_title( '<h1 class="blogpost-title text-center">', '</h1>' ); ?>
 
 			<div class="blogpost-meta text-center">
-				<?php //johanjohansson_posted_on('F j, g:i A'); ?>
 				<?php the_time('Y/m/d'); ?>
 			</div><!-- .blogpost-meta end -->
 		</header><!-- .blogpost-header end -->
@@ -23,8 +22,16 @@
 			<?php the_content(); ?>
 
 			<div class="tags">
-				<div class="tag">
-					<?php the_tags('', '', ''); ?>
+				<div class="tag text-center">
+					<?php
+						if( $tags = get_the_tags() ) {
+
+    					foreach( $tags as $tag ) {
+        				$sep = ( $tag === end( $tags ) ) ? '' : '';
+        				echo '<a href="' . get_term_link( $tag, $tag->taxonomy ) . '">#' . $tag->name . '</a>' . $sep;
+    					}
+						}
+					?>
 				</div><!-- .tag end -->
 			</div><!-- .tags end -->
 
@@ -36,64 +43,28 @@
 			?>
 		</div><!-- .blogpoost-content -->
 
-		<!--<div id="blogpost-latest" class="row">
-			<?php
-				$args = array( 'posts_per_page' => 4, 'order'=> 'ASC', 'orderby' => 'title' );
-				$postslist = get_posts( $args );
+		<div class="comments">
+			<div id="disqus_thread"></div>
+    		<script type="text/javascript">
+        	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        	var disqus_shortname = 'johanjohansson'; // required: replace example with your forum shortname
+		        /* * * DON'T EDIT BELOW THIS LINE * * */
+		        (function() {
+		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		        })();
+		    </script>
+    		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div><!-- .comment end -->
 
-				foreach ( $postslist as $post ) :
-  					setup_postdata( $post ); ?>
+			<div class="text-center">
+				<a class="blogpost-button" href="<?php echo get_permalink( 10 ); ?>">Tillbaka</a>
+			</div>
 
-					<div class="last-post col-sm-3">
-						<h4 class="text-center"><a href="<?php echo get_permalink($id); ?>"><?php the_title(); ?></a></h4>
-						<p class="text-center"><?php the_date(); ?></p>
-						<?php wp_trim_words(the_excerpt(), 50); ?>
-					</div>
-			<?php
-				endforeach;
-				wp_reset_postdata();
-			?>
-		</div>-->
-
-		<div class="text-center">
-			<a class="blogpost-button" href="<?php echo get_permalink( 10 ); ?>">Tillbaka</a>
-		</div>
-
-		<footer class="entry-footer">
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				//$category_list = get_the_category_list( __( ', ', 'johanjohansson' ) );
-
-				/* translators: used between list items, there is a space after the comma */
-				//$tag_list = get_the_tag_list( '', __( ', ', 'johanjohansson' ) );
-
-				//if ( ! johanjohansson_categorized_blog() ) {
-					// This blog only has 1 category so we just need to worry about tags in the meta text
-				//	if ( '' != $tag_list ) {
-					//	$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'johanjohansson' );
-				//	} else {
-				//		$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'johanjohansson' );
-				//	}
-
-				//} else {
-					// But this blog has loads of categories so we should probably display them here
-				//	if ( '' != $tag_list ) {
-				//		$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'johanjohansson' );
-				//	} else {
-				//		$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'johanjohansson' );
-				//	}
-
-				//} // end check for categories on this blog
-
-			//	printf(
-			//		$meta_text,
-			//		$category_list,
-			//		$tag_list,
-			//		get_permalink()
-			//	);
-			?>
-
-			<?php edit_post_link( __( 'Edit', 'johanjohansson' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- .entry-footer -->
+			<footer class="entry-footer">
+				<?php edit_post_link( __( 'Edit', 'johanjohansson' ), '<span class="edit-link">', '</span>' ); ?>
+			</footer><!-- .entry-footer -->
 	</section>
 </article><!-- #post-## -->

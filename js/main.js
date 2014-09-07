@@ -13,20 +13,31 @@ $('#menu-primary').addClass('nav navbar-nav');
  		}
  	)}
 
-   	var quotes = $(".quote");
-    var quoteIndex = -1;
 
-    function showNextQuote() {
 
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(2000)
-            .delay(2000)
-            .fadeOut(2000, showNextQuote);
 
-    }
 
-    showNextQuote();
+
+
+function showQuotes() {
+
+    var quotes = [];
+
+    quotes[0] = "Snuff & Coffee is Swedish love";
+    quotes[1] = "Love = Oxygen";
+    quotes[2] = "Beauty = price";
+    quotes[3] = "Keep a business diary";
+
+    var quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    $('.quote').text(quote).fadeToggle(2000);
+
+    setTimeout(showQuotes, 2000);
+}
+
+showQuotes();
+
+
 
   $(window).scroll(function() {
 

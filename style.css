@@ -118,18 +118,21 @@ Tags:
   line-height: 25px;
 }
 
-/* line 41, sass/_header.scss */
-.site-header .main-navigation .navbar-default {
+/* line 43, sass/_header.scss */
+.site-header .main-navigation .navbar-default,
+.site-header .main-navigation .navbar-default .navbar-collapse,
+.site-header .main-navigation .navbar-default .navbar-form {
+  border: none;
   background-color: rgba(248, 248, 248, 0);
   border-color: rgba(248, 248, 248, 0);
 }
 
-/* line 46, sass/_header.scss */
+/* line 49, sass/_header.scss */
 .site-header .main-navigation .menu-primary-container {
   text-align: center;
 }
 
-/* line 50, sass/_header.scss */
+/* line 53, sass/_header.scss */
 .site-header .main-navigation .navbar-nav {
   float: none;
   display: inline-block;
@@ -137,7 +140,7 @@ Tags:
   /* hasLayout IE7 trigger */
 }
 
-/* line 57, sass/_header.scss */
+/* line 60, sass/_header.scss */
 .site-header .main-navigation .navbar-default .navbar-nav > li > a {
   color: #333333;
   text-transform: uppercase;
@@ -145,7 +148,7 @@ Tags:
   font-size: 15px;
 }
 
-/* line 64, sass/_header.scss */
+/* line 67, sass/_header.scss */
 .site-header .main-navigation .navbar-default .navbar-toggle {
   border-color: white;
   position: relative;
@@ -160,13 +163,13 @@ Tags:
   border-radius: 4px;
 }
 
-/* line 79, sass/_header.scss */
+/* line 82, sass/_header.scss */
 .site-header .main-navigation .navbar-default .navbar-toggle:hover,
 .site-header .main-navigation .navbar-default .navbar-toggle:focus {
   background-color: none;
 }
 
-/* line 83, sass/_header.scss */
+/* line 86, sass/_header.scss */
 .site-header .main-navigation .navbar-default .navbar-toggle .icon-bar {
   display: block;
   width: 36px;
@@ -178,7 +181,7 @@ Tags:
   transition: all .1s linear;
 }
 
-/* line 94, sass/_header.scss */
+/* line 97, sass/_header.scss */
 .site-header .main-navigation .navbar-default .navbar-toggle.active .icon-bar:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -186,12 +189,12 @@ Tags:
   margin-top: 8px;
 }
 
-/* line 101, sass/_header.scss */
+/* line 104, sass/_header.scss */
 .site-header .main-navigation .navbar-default .navbar-toggle.active .icon-bar:nth-child(3) {
   opacity: 0;
 }
 
-/* line 105, sass/_header.scss */
+/* line 108, sass/_header.scss */
 .site-header .main-navigation .navbar-default .navbar-toggle.active .icon-bar:nth-child(4) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -200,6 +203,18 @@ Tags:
 }
 
 /* line 1, sass/_content.scss */
+::selection {
+  background: black;
+  color: white;
+}
+
+/* line 5, sass/_content.scss */
+::-moz-selection {
+  background: black;
+  color: white;
+}
+
+/* line 10, sass/_content.scss */
 .site-content .quotes {
   position: absolute;
   top: 0;
@@ -210,13 +225,13 @@ Tags:
   width: 100%;
 }
 
-/* line 11, sass/_content.scss */
+/* line 20, sass/_content.scss */
 .site-content .quotes p {
   font-family: "Oswald", sans-serif;
   font-size: 15px;
 }
 
-/* line 16, sass/_content.scss */
+/* line 25, sass/_content.scss */
 .site-content #cover {
   position: absolute;
   top: 0;
@@ -233,27 +248,27 @@ Tags:
 }
 
 /* 404 */
-/* line 32, sass/_content.scss */
+/* line 41, sass/_content.scss */
 .site-content .not-found .not-found-title {
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 50px;
   color: #333333;
 }
 
-/* line 38, sass/_content.scss */
+/* line 47, sass/_content.scss */
 .site-content .not-found .not-found-content {
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 15px;
   color: #333333;
 }
 
-/* line 1, sass/about.scss */
+/* line 1, sass/_about.scss */
 .site-content #about {
   position: relative;
   min-height: 300px;
 }
 
-/* line 6, sass/about.scss */
+/* line 6, sass/_about.scss */
 .site-content #about span {
   font-family: Helvetica, Arial;
   font-size: 16px;
@@ -263,12 +278,12 @@ Tags:
   color: #777;
 }
 
-/* line 15, sass/about.scss */
+/* line 15, sass/_about.scss */
 .site-content #about .hide-arrow {
   opacity: 0;
 }
 
-/* line 19, sass/about.scss */
+/* line 19, sass/_about.scss */
 .site-content #about .outcover {
   height: 25px;
   position: absolute;
@@ -277,29 +292,29 @@ Tags:
   border-bottom: 2px solid black;
 }
 
-/* line 27, sass/about.scss */
+/* line 27, sass/_about.scss */
 .site-content #about .portfolio-img {
   margin: 10px 0 20px 0;
 }
 
-/* line 31, sass/about.scss */
+/* line 31, sass/_about.scss */
 .site-content .portfolio-img img {
   border: 3px solid black;
 }
 
-/* line 35, sass/about.scss */
+/* line 35, sass/_about.scss */
 .site-content #portfolio {
   margin-top: 40px;
 }
 
-/* line 39, sass/about.scss */
+/* line 39, sass/_about.scss */
 .site-content #portfolio .portfolio-content h1 {
   font-size: 50px;
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   margin-bottom: 10px;
 }
 
-/* line 45, sass/about.scss */
+/* line 45, sass/_about.scss */
 .site-content #portfolio .portfolio-content p {
   margin-top: 40px;
   font-size: 15px;
@@ -307,24 +322,24 @@ Tags:
   word-spacing: 2px;
 }
 
-/* line 52, sass/about.scss */
+/* line 52, sass/_about.scss */
 .site-content #portfolio .portfolio-content img {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 57, sass/about.scss */
+/* line 57, sass/_about.scss */
 .site-content #portfolio .portfolio-content .spot-one {
   margin-bottom: 50px;
 }
 
-/* line 61, sass/about.scss */
+/* line 61, sass/_about.scss */
 .site-content #portfolio .portfolio-content .spot-one a {
   text-decoration: underline;
   color: #333333;
 }
 
-/* line 66, sass/about.scss */
+/* line 66, sass/_about.scss */
 .site-content #portfolio .portfolio-content .spot-one a:hover {
   text-decoration: underline;
   color: #757575;
@@ -406,11 +421,12 @@ Tags:
   word-spacing: 2px;
 }
 
-/* line 70, sass/_blog.scss */
+/* line 71, sass/_blog.scss */
 .site-content #blog #blogpost .blogpost-content p,
 .site-content #blog #blogpost .blogpost-content p span,
 .site-content #blog #blogspot .blogpost-content span,
-.site-content #blog #blogpost .blogpost-header .blogpost-meta {
+.site-content #blog #blogpost .blogpost-header .blogpost-meta,
+.site-content #blog .blogpost-article .blogpost-content {
   margin: 0px 0 20px 0;
   color: #333333 !important;
   font-family: "Oswald", sans-serif;
@@ -418,24 +434,24 @@ Tags:
   word-spacing: 2px;
 }
 
-/* line 78, sass/_blog.scss */
+/* line 79, sass/_blog.scss */
 .site-content #blog #blogpost #blogpost-latest {
   padding: 20px 0;
   border-top: 1px solid black;
 }
 
-/* line 83, sass/_blog.scss */
+/* line 84, sass/_blog.scss */
 .site-content #blog #blogpost #blogpost-latest .last-post h4 {
   font-size: 26px;
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-/* line 88, sass/_blog.scss */
+/* line 89, sass/_blog.scss */
 .site-content #blog #blogpost #blogpost-latest .last-post p {
   font-size: 15px;
 }
 
-/* line 93, sass/_blog.scss */
+/* line 94, sass/_blog.scss */
 .site-content #blog #blogpost .blogpost-button {
   color: #333333;
   font-size: 15px;
@@ -452,14 +468,14 @@ Tags:
   transition: color 0.25s ease-in-out;
 }
 
-/* line 109, sass/_blog.scss */
+/* line 110, sass/_blog.scss */
 .site-content #blog #blogpost .blogpost-button:hover {
   color: #757575;
   text-decoration: none;
 }
 
 /* Load More Post */
-/* line 115, sass/_blog.scss */
+/* line 116, sass/_blog.scss */
 .site-content #blog .more {
   width: 20%;
   padding: 0px;
@@ -473,7 +489,7 @@ Tags:
 }
 
 /* When Load More post're done */
-/* line 128, sass/_blog.scss */
+/* line 129, sass/_blog.scss */
 .site-content #blog .done {
   width: 20%;
   padding: 0px;
@@ -485,25 +501,24 @@ Tags:
   opacity: 0.2;
 }
 
-/* line 139, sass/_blog.scss */
+/* line 142, sass/_blog.scss */
 .site-content .blogpost-content .tags {
   border-top: 1px solid #757575;
 }
 
-/* line 143, sass/_blog.scss */
+/* line 146, sass/_blog.scss */
 .site-content .tags .tag {
   margin: 10px 0 0 0;
 }
 
-/* line 147, sass/_blog.scss */
+/* line 150, sass/_blog.scss */
 .site-content .blogpost-content .tags .tag a {
   margin-right: 5px;
   color: #333333;
-  font-size: 15px;
+  font-size: 12px;
   font-family: "Oswald", sans-serif;
   text-shadow: none;
-  padding: 2px 10px;
-  border: 1px solid #b3b3b3;
+  padding: 2px 5px;
   -webkit-transition: color 0.25s ease-in-out;
   -moz-transition: color 0.25s ease-in-out;
   -ms-transition: color 0.25s ease-in-out;
@@ -511,10 +526,24 @@ Tags:
   transition: color 0.25s ease-in-out;
 }
 
-/* line 162, sass/_blog.scss */
+/* line 164, sass/_blog.scss */
 .site-content .blogpost-content .tags .tag a:hover {
   color: #757575;
   text-decoration: none;
+}
+
+/* line 172, sass/_blog.scss */
+.site-content #blog .blogpost-article .blogpost-header .blogpost-title,
+.site-content #blog .blogpost-article .blogpost-header .blogpost-title a {
+  color: black;
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+/* line 177, sass/_blog.scss */
+.site-content #blog .blogpost-article .blogpost-meta {
+  color: #333333;
+  font-size: 12px;
+  font-family: "Oswald", sans-serif;
 }
 
 /* line 1, sass/_contact.scss */
@@ -600,35 +629,46 @@ Tags:
     position: relative;
   }
 }
-/* line 1, sass/footer.scss */
-.main-footer {
-  width: 100%;
-  height: 30px;
+/* line 2, sass/_footer.scss */
+.home .main-footer,
+.page-id-12 .main-footer {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  text-align: center;
-  z-index: 100;
+  overflow: hidden;
 }
 
-/* line 12, sass/footer.scss */
-.site-footer {
+/* line 7, sass/_footer.scss */
+.main-footer {
   width: 100%;
-  height: 30px;
+  min-height: 30px;
+  padding: 5px 0 0 0;
   position: relative;
   bottom: 0;
   left: 0;
   background-color: white;
   text-align: center;
   z-index: 100;
-  margin-top: 40px;
 }
-
-/* line 25, sass/footer.scss */
-.main-footer p,
-.site-footer p {
+/* line 18, sass/_footer.scss */
+.main-footer p {
   padding: 3px 0;
   font-family: "Oswald", sans-serif;
   font-size: 15px;
+}
+/* line 24, sass/_footer.scss */
+.main-footer ul {
+  list-style: none;
+}
+/* line 28, sass/_footer.scss */
+.main-footer li {
+  display: inline-block;
+}
+/* line 31, sass/_footer.scss */
+.main-footer li:nth-child(-n+2):after {
+  content: '•';
+  padding: 2px 5px 0 5px;
+}
+/* line 36, sass/_footer.scss */
+.main-footer li a {
+  color: black;
+  font-family: "Oswald", sans-serif;
 }

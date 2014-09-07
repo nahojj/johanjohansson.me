@@ -6,10 +6,7 @@
  ?>
 <?php get_header(); ?>
 <div class="quotes col-sm-12 text-center">
-	<p class="quote" style="display: none">Snuff & Coffee is Swedish love</p>
-	<p class="quote" style="display: none">Love = Oxygen</p>
-	<p class="quote" style="display: none">Beauty = price</p>
-	<p class="quote" style="display: none">Keep a business diary</p>
+	<p class="quote"></p>
 </div><!-- quotes end -->
 
 <div id="cover"></div>
@@ -19,4 +16,4 @@
 </div>
 
 
-<?php get_footer('footer'); ?>
+<?php get_footer(); ?>

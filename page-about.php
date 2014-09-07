@@ -6,10 +6,7 @@
 ?>
 <?php get_header('second'); ?>
 <div class="quotes col-sm-12 text-center">
-	<p class="quote" style="display: none">Snuff & Coffee is Swedish love</p>
-	<p class="quote" style="display: none">Love = Oxygen</p>
-	<p class="quote" style="display: none">Beauty = price</p>
-	<p class="quote" style="display: none">Keep a business diary</p>
+	<p class="quote"></p>
 </div><!-- quotes end -->
 
 
@@ -31,16 +28,16 @@
 			<div class="spot-one">
 				<h1 class="text-center">Designer & Front End Utvecklare</h1>
 				<p class="text-justify">
-					Studerat tvåårigt program inom webbutveckling för kreativa näringar. Idag arbetar jag och är anställd som professionell Desginer & Front End Utvecklare. Mitt mål är att arbeta med människor som har samma kreativa passion, målsättningar och ett brinnande hjärta för det vi gör. Ett bolag som fylls av kreativa människor med kreativa lösningar, där vi dagligen arbetar och hjälper människor att nå ut på webben på ett roligare och bättre sätt.    
+					Studerat tvåårigt program inom webbutveckling för kreativa näringar. Idag arbetar jag och är anställd som professionell Desginer & Front End Utvecklare. Mitt mål är att arbeta med människor som har samma kreativa passion, målsättningar och ett brinnande hjärta för det vi gör. Ett bolag som fylls av kreativa människor med kreativa lösningar, där vi dagligen arbetar och hjälper människor att nå ut på webben på ett roligare och bättre sätt.
 				</p>
 			</div><!-- SPOT ONE end -->
 			<div class="sport-two">
 				<h1 class="text-center">En kort lektion historia</h1>
 				<p class="text-justify">
-					Jag har ett ursprung ifrån Småland, Kalmar som liten. Idag bor jag ca. 7 mil från Stockholm Stad i en liten ort som heter Vagnhärad, där tiden står stilla. Från ett tidigt datorintresse i en tidig ungdom började jag utforska internet och webben. Jag hittade nyckeln till dörren jag inte visste existerade då men som skulle komma att forma min framtid. 
+					Jag har ett ursprung ifrån Småland, Kalmar som liten. Idag bor jag ca. 7 mil från Stockholm Stad i en liten ort som heter Vagnhärad, där tiden står stilla. Från ett tidigt datorintresse i en tidig ungdom började jag utforska internet och webben. Jag hittade nyckeln till dörren jag inte visste existerade då men som skulle komma att forma min framtid.
 				</p>
 				<p class="text-justify">
-					Inspirationen fanns överallt, finns överallt! Som väckte mina idéer till att börja söka kunskap och göra saker genom internet och på webben. När jag var omkring 15 år gammal så ville jag starta en tidning och skriva om musik. Detta resulterade i att jag började skriva en hel artikel om en gammal musiker, Elliot Smith. En artikel blev två och snart hade jag skrivit som aldrig förr. Jag började söka efter kunskap om Photoshop och InDesign för att kunna designa tidningen och artiklarna. 
+					Inspirationen fanns överallt, finns överallt! Som väckte mina idéer till att börja söka kunskap och göra saker genom internet och på webben. När jag var omkring 15 år gammal så ville jag starta en tidning och skriva om musik. Detta resulterade i att jag började skriva en hel artikel om en gammal musiker, Elliot Smith. En artikel blev två och snart hade jag skrivit som aldrig förr. Jag började söka efter kunskap om Photoshop och InDesign för att kunna designa tidningen och artiklarna.
 				</p>
 				<p class="text-justify">
 					När jag tänker tillbaka på detta idag, hur jag satt där och var som mest fokuserad inne i mitt tänkande och skapande framför datorn, blir jag bara så oerhört glad. För det handlade inte om att göra en tidning där målet var att vinna eller starta ett företag som säljer musiktidningar, utan att få skapa och formge någonting som inte fanns. Att göra sin egna idé till verklighet, där du själv satte målen. Idag förstår jag och kan se denna process från olika håll, visst fanns det nog en gnutta hopp i mig som 15 åring om att kanske kunna tjäna pengar på tidningen, i alla fall visa upp mitt kunnande. Nu förstår jag, att i själva verket handlade det om att få vara kreativ. Hitta på saker, skapa eller lösa ett problem. Visst är det fantastiskt?
@@ -59,9 +56,9 @@
 					 HAR DU TÄNKTE PÅ ATT ALLTING ÄR PÅHITTAT?
 				</p>
 			</div><!-- spot-two end -->
-			
+
 		</div>
 	</div>
 </section><!-- portfolio end -->
 
-<?php get_footer('sfooter'); ?>
+<?php get_footer(); ?>

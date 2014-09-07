@@ -1,0 +1,45 @@
+.home .main-footer,
+.page-id-12 .main-footer {
+	position: absolute;
+	overflow: hidden;
+}
+
+.main-footer {
+	width: 100%;
+	min-height: 30px;
+	padding: 5px 0 0 0;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	background-color: $white;
+	text-align: center;
+	z-index: 100;
+
+	p {
+		padding: 3px 0;
+		font-family: $font-stack-text;
+		font-size: $font-size-small;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: inline-block;
+
+		&:nth-child(-n+2):after {
+			content: '•';
+			padding: 2px 5px 0 5px;
+		}
+
+		a {
+			color: $black;
+			font-family: $font-stack-text;
+
+			&:hover {
+				$main-color-hover: #757575;
+			}
+		}
+	}
+}

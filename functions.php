@@ -44,7 +44,7 @@ function johanjohansson_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'johanjohansson' ),
 	) );
-	
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -148,3 +148,14 @@ function new_excerpt_more( $more ) {
 	return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
+function my_login_logo() { ?>
+  <style type="text/css">
+	  body.login div#login h1 a {
+      background-image: url();
+      padding-bottom: 30px;
+    }
+  </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

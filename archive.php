@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<section id="primary" class="container content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="blog" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -18,10 +18,10 @@ get_header(); ?>
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
-							single_cat_title();
+							single_cat_title('#');
 
 						elseif ( is_tag() ) :
-							single_tag_title();
+							single_tag_title('#');
 
 						elseif ( is_author() ) :
 							printf( __( 'Author: %s', 'johanjohansson' ), '<span class="vcard">' . get_the_author() . '</span>' );
