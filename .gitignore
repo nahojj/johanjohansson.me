@@ -1,0 +1,6 @@
+# Created by http://www.gitignore.io
+
+#!! ERROR: word is undefined. Use list command to see defined gitignore types !!#
+
+### Sass ###
+.sass-cache
